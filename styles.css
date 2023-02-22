@@ -1,0 +1,221 @@
+:root {
+    --logo-text-color: white;
+    --form-text-color: rgb(255, 255, 255);
+    --button-color: rgb(216, 0, 141);
+    --button-hover-color: rgb(242, 65, 255);
+    --valid-color: rgb(47, 255, 78);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: black;
+}
+
+body,
+form,
+#logo-container,
+#picture,
+form,
+#form-content,
+#info,
+#form-content > div,
+.input-container,
+#button,
+#creator {
+    display: flex;
+}
+
+body, #logo-container {
+    flex-wrap: wrap;
+}
+
+form {
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    color: var(--form-text-color);
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+#picture {
+    background-image: url(scifipic.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    justify-content: center;
+}
+
+#logo-container {
+    position: absolute;
+    top: 150px;
+    justify-content: center;
+    align-items: center;
+    color: var(--logo-text-color);
+    font-size: x-large;
+    letter-spacing: 2px;
+    text-shadow: 0px 0px 2px blue;
+    text-align: center;
+}
+
+#logo-container,
+#logo,
+#logo-container h1,
+#creator,
+#creator p,
+#creator-a {
+    background-color: transparent;
+}
+
+#logo {
+    width: 150px;
+}
+
+#picture,
+#form-container {
+    flex: 1;
+}
+
+#form-container {
+    flex-grow: 1.5;
+}
+
+#form-content {
+    flex-direction: column;
+}
+
+#form-content div {
+    padding: 0px 20px 20px 20px;
+    flex-wrap: wrap;
+}
+
+#info,
+#form-content,
+#button {
+    border: 1px solid white;
+}
+
+#info {
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 50px;
+}
+
+#form-content h2 {
+    padding: 20px 20px 20px 59px;
+}
+
+#button {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 50px;
+}
+
+.input-container {
+    flex-direction: column;
+}
+
+.input input {
+    width: 250px;
+    height: 30px;
+    color: var(--form-text-color);
+    border: 1px solid rgb(152, 152, 152);
+    border-radius: 5px;
+    text-indent: 10px;
+    caret-color: var(--button-color);
+    caret-shape: block;
+}
+
+.input input:focus {
+    outline: none !important;
+    border: 1px solid var(--button-color);
+}
+
+.input input:invalid:focus {
+    caret-color: red;
+    border: 1px solid red;
+    color: red;
+}
+
+.input input:valid:focus {
+    caret-color: var(--valid-color);
+    border: 1px solid var(--valid-color);
+    color: var(--valid-color);
+}
+
+.input label {
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+
+#button div {
+    padding: 25px 0 25px 0;
+    font-size: 16px;
+}
+
+#ca {
+    color: var(--form-text-color);
+    border: 1px solid white;
+    cursor: pointer;
+    padding: 15px 50px 15px 50px;
+    background-color: var(--button-color);
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#ca:hover {
+    background-color: var(--button-hover-color);
+    transition: 1.0s;
+}
+
+#li {
+    color: var(--button-color);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#li:hover {
+    text-decoration: underline;
+}
+
+#creator {
+    color: var(--form-text-color);
+    background-color: transparent;
+    align-self: flex-end;
+    padding-bottom: 20px;
+    align-items: center;
+    gap: 3px;
+}
+
+#github {
+    background-color: transparent;
+}
+
+#creator-a {
+    color: var(--form-text-color);
+}
+
+.validchecker {
+    position: relative;
+    padding-top: 5px;
+}
+
+@media only screen and (max-width: 705px) {
+    body {
+        flex-direction: column;
+    }
+    #picture {
+        flex: none;
+    }
+    #button {
+        align-items: center;
+    }
+}

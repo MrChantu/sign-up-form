@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scale=0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+            rel="stylesheet" />
+    </head>
+    <body>
+        <div id="picture">
+            <div id="logo-container">
+                <img id="logo" src="spaceship-logo.png" />
+                <h1>Starlight Industries</h1>
+            </div>
+            <div id="creator">
+                <p><a href="https://github.com/Chantu1" id="creator-a">Chantu1</a></p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" id="github" viewBox="0 0 16 16">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+                  </svg>
+            </div>
+        </div>
+        <div id="form-container">
+            <form>
+                <div id="info">
+                    <div id="info-1">
+                        <h2>This is not a real online service!</h2>
+                        <h2>Sign up now to join the future of civilization</h2>
+                    </div>
+                    <div id="info-2"></div>
+                </div>
+                <div id="form-content">
+                    <h2>Let's do this!</h2>
+                    <div>
+                        <div class="input-container">
+                            <div class="input">
+                                <label for="fname">FIRST NAME</label>
+                                <input id="fname" minlength="3" type="text" required/>
+                                <span class="validchecker" id="fbox">First name longer than 3 characters</span>
+                            </div>
+                            <div class="input">
+                                <label for="email">EMAIL</label>
+                                <input id="email" type="email" required/>
+                                <span class="validchecker" id="ebox">example@example.com</span>
+                            </div>
+                            <div class="input">
+                                <label for="password1">PASSWORD</label>
+                                <input id="password1" type="password" required/>
+                                <span class="validchecker" id="p1">Passwords match</span>
+                            </div>
+                        </div>
+                        <div class="input-container">
+                            <div class="input">
+                                <label for="lname">LAST NAME</label>
+                                <input id="lname" type="text" required/>
+                                <span class="validchecker" id="lbox">Last name longer than 3 characters</span>
+                            </div>
+                            <div class="input">
+                                <label for="number">PHONE NUMBER</label>
+                                <input id="number" type="number"/>
+                                <span class="validchecker" id="nbox">888-888-8888</span>
+                            </div>
+                            <div class="input">
+                                <label for="password2">CONFIRM PASSWORD</label>
+                                <input id="password2" type="password" required/>
+                                <span class="validchecker" id="p2">Passwords match</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="button">
+                    <input id="ca" type="submit" value="Create Account" />
+                    <div>
+                        <span>Already have an account? </span><input id="li" type="button" value="Log in">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>
