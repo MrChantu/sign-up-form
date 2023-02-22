@@ -9,6 +9,14 @@ const fbox = document.querySelector("#fbox");
 const lname = document.querySelector("#lname");
 const lbox = document.querySelector("#lbox");
 
+// Email
+const email = document.querySelector("#email");
+const ebox = document.querySelector("#ebox");
+
+// Phone number
+const number = document.querySelector("#number");
+const nbox = document.querySelector("#nbox");
+
 // Passwords
 const password1 = document.querySelector("#password1");
 const password2 = document.querySelector("#password2");
@@ -36,6 +44,27 @@ lname.addEventListener("keyup", function() {
         lbox.style.color = green;
     } else {
         lbox.style.color = red;
+    }
+});
+
+email.addEventListener("keyup", function() {
+    if (email.value.length == 0)
+    {
+        ebox.style.color = "white";
+    } else if (email.checkValidity()) {
+        ebox.style.color = green;
+    } else {
+        ebox.style.color = red;
+    }
+});
+
+number.addEventListener("keyup", function() {
+    if (number.value.length == 0) {
+        nbox.style.color = "white";
+    } else if (number.checkValidity()) {
+        nbox.style.color = green;
+    } else {
+        nbox.style.color = red;
     }
 });
 

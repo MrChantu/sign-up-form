@@ -97,7 +97,7 @@ form {
 #info,
 #form-content,
 #button {
-    border: 1px solid white;
+    
 }
 
 #info {
@@ -124,7 +124,7 @@ form {
     width: 250px;
     height: 30px;
     color: var(--form-text-color);
-    border: 1px solid rgb(152, 152, 152);
+    border: 1px solid var(--button-color);
     border-radius: 5px;
     text-indent: 10px;
     caret-color: var(--button-color);
@@ -218,4 +218,5 @@ form {
     #button {
         align-items: center;
     }
+    
 }
