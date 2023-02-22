@@ -1,2 +1,4 @@
-# sign-up-form
-A webpage signup form design
+# PREVIEW https://chantu1.github.io/sign-up-form/
+This is a sign-up-form design I attempted to create.
+
+Time it took me to finish: 4 hours.
